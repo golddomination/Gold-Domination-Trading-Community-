@@ -1,190 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gold Domination Trading Community</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Domination VIP</title>
+  <style>
+    /* GENERAL STYLES */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 1200px; margin: auto; padding: 20px; }
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f0f0f;
-    color: #fff;
-}
+    /* HERO SECTION */
+    header {
+      text-align: center;
+      padding: 80px 20px 60px 20px;
+      background: linear-gradient(135deg,#1a1a1a,#333);
+    }
+    header h1 { font-size: 48px; margin-bottom: 20px; }
+    header p { font-size: 20px; margin-bottom: 30px; color: #aaa; }
+    .btn-primary {
+      background-color: #f2b600;
+      color: #0d0d0d;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn-primary:hover { background-color: #e6a500; }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 0;
-    text-align: center;
-}
+    /* TIMER */
+    #countdown {
+      font-size: 24px;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #f2b600;
+    }
 
-.btn {
-    background: #00ffcc;
-    color: #000;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 6px;
-    margin-top: 10px;
-}
+    /* SECTIONS */
+    section { padding: 60px 20px; }
+    section h2 { font-size: 36px; margin-bottom: 20px; text-align: center; color: #f2b600; }
+    section p { font-size: 18px; text-align: center; color: #ccc; margin-bottom: 40px; }
 
-.card {
-    background: #1a1a1a;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    width: 280px;
-}
+    /* PRICING CARDS */
+    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 30px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid #333;
+    }
+    .card:hover { border-color: #f2b600; }
+    .card h3 { font-size: 24px; margin-bottom: 15px; color: #f2b600; }
+    .card p { font-size: 18px; margin-bottom: 20px; color: #ccc; }
+    .card span { font-size: 28px; font-weight: bold; color: #fff; }
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    /* PROOF / IMAGES */
+    .proof { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .proof img { width: 250px; height: auto; border-radius: 10px; border: 2px solid #333; }
 
-.price {
-    font-size: 24px;
-    font-weight: bold;
-}
+    /* TESTIMONIALS */
+    .testimonials { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .testimonial {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+    .testimonial p { font-style: italic; color: #ccc; margin-bottom: 10px; }
+    .testimonial h4 { color: #f2b600; }
 
-.old {
-    text-decoration: line-through;
-    color: #aaa;
-}
+    /* FOOTER */
+    footer { text-align: center; padding: 40px 20px; background-color: #111; color: #aaa; }
+    footer a { color: #f2b600; }
 
-.badge {
-    color: #00ffcc;
-    font-weight: bold;
-}
-
-footer {
-    padding: 20px;
-    font-size: 14px;
-    color: #aaa;
-}
-</style>
+    @media(max-width: 768px){
+      .cards, .proof, .testimonials { flex-direction: column; align-items: center; }
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<div class="container">
-    <h1>Join My VIP Trading Community</h1>
-    <p>High-probability setups | Smart risk management | Consistent growth</p>
-    <button class="btn" onclick="goToForm()">Secure Your Spot</button>
+  <!-- HERO -->
+  <header>
+    <h1>Secure Your VIP Spot Today</h1>
+    <p>VIP Signals, Account Management & Account Passing — Book Your Seat Now</p>
+    <button class="btn-primary" onclick="window.location.href='https://form.jotform.com/260823107300039'">Book Now</button>
+    <div id="countdown">05:00:00</div>
+  </header>
 
-    <h3 style="margin-top:20px;">Limited Time Offer Ends In:</h3>
-    <p id="timer" style="font-size:24px; color:#00ffcc;"></p>
-</div>
-
-<!-- SERVICES -->
-<div class="container">
-    <h2>Our Services</h2>
-    <div class="flex">
-
-        <div class="card">
-            <h3>VIP Signals</h3>
-            <p>High-probability trade setups with strong risk management.</p>
-        </div>
-
-        <div class="card">
-            <h3>Account Management</h3>
-            <p>50/50 profit split, manual trading, strict capital protection.</p>
-        </div>
-
-        <div class="card">
-            <h3>Account Passing</h3>
-            <p>Reliable and consistent challenge passing services.</p>
-        </div>
-
+  <!-- PRICING SECTION -->
+  <section id="pricing">
+    <h2>Our Plans</h2>
+    <p>Choose the plan that fits your trading goals</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Monthly VIP</h3>
+        <p>All signals & strategies</p>
+        <span>$35</span>
+      </div>
+      <div class="card">
+        <h3>Lifetime VIP</h3>
+        <p>Unlimited access forever</p>
+        <span>$85</span>
+      </div>
+      <div class="card">
+        <h3>Account Passing $5K</h3>
+        <p>Fully managed</p>
+        <span>$120</span>
+      </div>
+      <div class="card">
+        <h3>Account Passing $10K</h3>
+        <p>Fully managed</p>
+        <span>$150</span>
+      </div>
+      <div class="card">
+        <h3>Account Passing $25K</h3>
+        <p>Fully managed</p>
+        <span>$200</span>
+      </div>
+      <div class="card">
+        <h3>Account Passing $50K</h3>
+        <p>Fully managed</p>
+        <span>$250</span>
+      </div>
+      <div class="card">
+        <h3>Account Passing $100K</h3>
+        <p>Fully managed</p>
+        <span>$300</span>
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- PRICING -->
-<div class="container">
-    <h2>Pricing</h2>
-    <div class="flex">
+  <!-- ACCOUNT MANAGEMENT -->
+  <section id="account-management">
+    <h2>Account Management</h2>
+    <p>50-50 profit split, no EAs, high probability strategies, 0% account blown risk</p>
+  </section>
 
-        <div class="card">
-            <h3>Monthly VIP</h3>
-            <p class="old">$70</p>
-            <p class="price">$35</p>
-            <p class="badge">50% OFF</p>
-            <button class="btn" onclick="goToForm()">Book Now</button>
-        </div>
-
-        <div class="card">
-            <h3>Lifetime VIP</h3>
-            <p class="old">$450</p>
-            <p class="price">$85</p>
-            <p class="badge">70% OFF</p>
-            <button class="btn" onclick="goToForm()">Book Now</button>
-        </div>
-
+  <!-- PROOF / SCREENSHOTS -->
+  <section id="proof">
+    <h2>Proof & Results</h2>
+    <div class="proof">
+      <img src="https://via.placeholder.com/250x150.png?text=Screenshot+1" alt="Proof 1">
+      <img src="https://via.placeholder.com/250x150.png?text=Screenshot+2" alt="Proof 2">
+      <img src="https://via.placeholder.com/250x150.png?text=Screenshot+3" alt="Proof 3">
     </div>
+  </section>
 
-    <h3>Account Passing</h3>
-    <div class="flex">
-
-        <div class="card"><p>$5K → $120</p><button class="btn" onclick="goToForm()">Book Now</button></div>
-        <div class="card"><p>$10K → $150</p><button class="btn" onclick="goToForm()">Book Now</button></div>
-        <div class="card"><p>$25K → $200</p><button class="btn" onclick="goToForm()">Book Now</button></div>
-        <div class="card"><p>$50K → $250</p><button class="btn" onclick="goToForm()">Book Now</button></div>
-        <div class="card"><p>$100K → $300</p><button class="btn" onclick="goToForm()">Book Now</button></div>
-
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Amazing signals, profits are consistent!"</p>
+        <h4>Ali Khan</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Professional and reliable service!"</p>
+        <h4>Hassan R.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Account management is top-notch!"</p>
+        <h4>Sara M.</h4>
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- PROOF -->
-<div class="container">
-    <h2>Proof of Results</h2>
-    <div class="flex">
-        <div class="card"><img src="https://via.placeholder.com/250"><p>Consistent profits</p></div>
-        <div class="card"><img src="https://via.placeholder.com/250"><p>Winning trades</p></div>
-        <div class="card"><img src="https://via.placeholder.com/250"><p>Payout proof</p></div>
-    </div>
-</div>
+  <!-- FOOTER -->
+  <footer>
+    <p>Contact us: <a href="mailto:teamgolddomination@gmail.com">teamgolddomination@gmail.com</a> | Telegram: <a href="https://t.me/gold_domination">@gold_domination</a></p>
+    <p>&copy; 2026 Gold Domination</p>
+  </footer>
 
-<!-- TESTIMONIALS -->
-<div class="container">
-    <h2>What Our Clients Say</h2>
-    <div class="flex">
-        <div class="card"><p>"Very consistent signals!"</p><strong>- Ali</strong></div>
-        <div class="card"><p>"Clean setups, highly recommend."</p><strong>- Ahmed</strong></div>
-        <div class="card"><p>"Great management service."</p><strong>- Sara</strong></div>
-    </div>
-</div>
-
-<!-- TELEGRAM -->
-<div class="container">
-    <a href="https://t.me/YOUR_CHANNEL" target="_blank">
-        <button class="btn">Join Free Telegram Channel</button>
-    </a>
-</div>
-
-<footer>
-This is not financial advice. Trading involves risk.
-</footer>
-
-<script>
-function goToForm() {
-    window.open("https://form.jotform.com/260823107300039", "_blank");
-}
-
-// TIMER
-let time = 7200;
-setInterval(() => {
-    let h = Math.floor(time / 3600);
-    let m = Math.floor((time % 3600) / 60);
-    let s = time % 60;
-    document.getElementById("timer").innerText = `${h}:${m}:${s}`;
-    if (time > 0) time--;
-}, 1000);
-</script>
+  <!-- TIMER SCRIPT -->
+  <script>
+    // 5 hours countdown timer
+    let timeLeft = 5 * 60 * 60; // 5 hours in seconds
+    const countdown = document.getElementById('countdown');
+    function updateTimer() {
+      let hrs = Math.floor(timeLeft / 3600);
+      let mins = Math.floor((timeLeft % 3600) / 60);
+      let secs = timeLeft % 60;
+      countdown.innerText = 
+        `${String(hrs).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+      timeLeft--;
+      if(timeLeft < 0) { timeLeft = 0; }
+    }
+    setInterval(updateTimer, 1000);
+  </script>
 
 </body>
 </html>
