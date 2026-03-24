@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gold Domination Trading Community</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.btn {
+    background: #00ffcc;
+    color: #000;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 280px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.old {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.badge {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="container">
+    <h1>Join My VIP Trading Community</h1>
+    <p>High-probability setups | Smart risk management | Consistent growth</p>
+    <button class="btn" onclick="goToForm()">Secure Your Spot</button>
+
+    <h3 style="margin-top:20px;">Limited Time Offer Ends In:</h3>
+    <p id="timer" style="font-size:24px; color:#00ffcc;"></p>
+</div>
+
+<!-- SERVICES -->
+<div class="container">
+    <h2>Our Services</h2>
+    <div class="flex">
+
+        <div class="card">
+            <h3>VIP Signals</h3>
+            <p>High-probability trade setups with strong risk management.</p>
+        </div>
+
+        <div class="card">
+            <h3>Account Management</h3>
+            <p>50/50 profit split, manual trading, strict capital protection.</p>
+        </div>
+
+        <div class="card">
+            <h3>Account Passing</h3>
+            <p>Reliable and consistent challenge passing services.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- PRICING -->
+<div class="container">
+    <h2>Pricing</h2>
+    <div class="flex">
+
+        <div class="card">
+            <h3>Monthly VIP</h3>
+            <p class="old">$70</p>
+            <p class="price">$35</p>
+            <p class="badge">50% OFF</p>
+            <button class="btn" onclick="goToForm()">Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Lifetime VIP</h3>
+            <p class="old">$450</p>
+            <p class="price">$85</p>
+            <p class="badge">70% OFF</p>
+            <button class="btn" onclick="goToForm()">Book Now</button>
+        </div>
+
+    </div>
+
+    <h3>Account Passing</h3>
+    <div class="flex">
+
+        <div class="card"><p>$5K → $120</p><button class="btn" onclick="goToForm()">Book Now</button></div>
+        <div class="card"><p>$10K → $150</p><button class="btn" onclick="goToForm()">Book Now</button></div>
+        <div class="card"><p>$25K → $200</p><button class="btn" onclick="goToForm()">Book Now</button></div>
+        <div class="card"><p>$50K → $250</p><button class="btn" onclick="goToForm()">Book Now</button></div>
+        <div class="card"><p>$100K → $300</p><button class="btn" onclick="goToForm()">Book Now</button></div>
+
+    </div>
+</div>
+
+<!-- PROOF -->
+<div class="container">
+    <h2>Proof of Results</h2>
+    <div class="flex">
+        <div class="card"><img src="https://via.placeholder.com/250"><p>Consistent profits</p></div>
+        <div class="card"><img src="https://via.placeholder.com/250"><p>Winning trades</p></div>
+        <div class="card"><img src="https://via.placeholder.com/250"><p>Payout proof</p></div>
+    </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="flex">
+        <div class="card"><p>"Very consistent signals!"</p><strong>- Ali</strong></div>
+        <div class="card"><p>"Clean setups, highly recommend."</p><strong>- Ahmed</strong></div>
+        <div class="card"><p>"Great management service."</p><strong>- Sara</strong></div>
+    </div>
+</div>
+
+<!-- TELEGRAM -->
+<div class="container">
+    <a href="https://t.me/YOUR_CHANNEL" target="_blank">
+        <button class="btn">Join Free Telegram Channel</button>
+    </a>
+</div>
+
+<footer>
+This is not financial advice. Trading involves risk.
+</footer>
+
+<script>
+function goToForm() {
+    window.open("https://form.jotform.com/260823107300039", "_blank");
+}
+
+// TIMER
+let time = 7200;
+setInterval(() => {
+    let h = Math.floor(time / 3600);
+    let m = Math.floor((time % 3600) / 60);
+    let s = time % 60;
+    document.getElementById("timer").innerText = `${h}:${m}:${s}`;
+    if (time > 0) time--;
+}, 1000);
+</script>
+
+</body>
+</html>
